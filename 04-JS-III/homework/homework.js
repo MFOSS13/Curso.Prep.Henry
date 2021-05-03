@@ -101,7 +101,7 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var maximo = numero [0];
+  var maximo = numeros [0];
   for (var i = 0; i < numeros.length; i++){
     if (numeros [i] > maximo) {
       maximo = numeros [i];
@@ -115,11 +115,11 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  var total = 1
-  for (var i = 0; i < arguments.length ; i ++){
-    total = total *arguments [i]
-  }
   if (arguments.length < 1) return 0;
+  var total = 1;
+  for (var i = 0; i < arguments.length ; i ++){
+    total = total * arguments [i];
+  } return total;
 }
 
 
@@ -144,7 +144,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana"
   } else {
-    return "Es dia laboral"
+    return "Es dia Laboral"
   }
 } 
 
